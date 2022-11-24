@@ -1,0 +1,38 @@
+<br><br>
+<div class="container">
+  
+  
+  
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">customer Name</th>
+          <th scope="col">customer product name</th>
+          <th scope="col">order date</th>
+          <th scope="col">warranty date</th>
+          <th scope="col">Price</th>
+          <th scope="col">Action</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor = 'let us of listData'>
+          <th scope="row">{{us.id}}</th>
+          <td>{{us.customerName}}</td>
+          <td>{{us.customerShoesName}}</td>
+          <td>{{us.orderDate}}</td>
+          <td>{{us.warrantyDate}}</td>
+          <td>{{us.price}}</td>
+          
+          <td>
+            <button class="btn btn-sm btn-danger"  (click)="deleteId(us.id)">Delete</button>
+            
+            <a [routerLink]="['/updateCustomer', us.id]" class="btn btn-sm btn-success">Update</a>
+          </td>
+        </tr>
+  
+      </tbody>
+    </table>
+  
+  </div>

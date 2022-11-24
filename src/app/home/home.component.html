@@ -1,0 +1,176 @@
+<div>
+    <head>
+    <style>
+    
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: rgba(26, 40, 107, 0.555);
+    }
+    p{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: antiquewhite;
+    }
+    li a:hover {
+      background-color: #232320;
+    }
+    
+    * {box-sizing: border-box}
+    body {font-family: Verdana, sans-serif; margin:0}
+    
+    
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    h3 {text-align: center;
+    color:rgb(0, 0, 0);
+    font-family:'Oswald', sans-serif;
+    }
+    
+    p {text-align: center;
+    font-family: 'Oswald', sans-serif;
+    color:rgb(0, 0, 0);}
+    
+    </style>
+    </head>
+    <body>
+    <section class="sub-header">
+    </section><br><br>
+
+    <div align="center">
+      <a [routerLink]="['/login']" class="btn btn-primary">LOGIN</a>
+    </div>
+    <br>
+
+    <h3>puma</h3>
+    <p>choose your style </p>
+    <p>pick, pay, wear</p>
+      
+    <div class="slideshow-container">
+    
+        <img style="max-width:25%;border:6px outset #545565;"src="assets/pumapokemon.webp" >
+        <div align="center">PUMA X POKEMON(limited edition) </div>
+        <div align="center">RM 750.00 </div>
+      </div>
+      
+         <br><br> 
+        <img style="max-width:25%;border:6px outset #545565;"src="assets/pumavogue.webp">
+        <div align="center">PUMA X VOGUE </div>
+        <div align="center">RM 1200.00 </div>
+      
+        <br><br>
+        <img style="max-width:25%;border:6px outset #545565;"src="assets/pumacocacola.webp" >
+        <div align="center">PUMA X COCA COLA </div>
+        <div align="center">RM 400.00 </div>
+    
+        <br>
+        <img style="max-width:25%;border:6px outset #545565;"src="assets/pumadunk.jfif" >
+        <div align="center">PUMA DUNK</div>
+        <div align="center">RM 359.00 </div>
+        <section class="vission">
+          
+
+          
+          <h1>ABOUT US</h1>
+
+          
+
+          <div class="row">
+              <div class="vission-col">
+                  <h3>SLOGAN</h3>
+                  <p>Forever faster<br><br></p>
+
+                  <p> What are you training for<br><br></p>
+                    
+                  <p> Powerhouse<br><br></p>
+                    
+                  <p> Body train together<br><br></p>
+                    
+                  <p>Where the action is.<br><br></p>
+              </div>
+
+              <div class="vission-col">
+                  <h3>VISSION</h3>
+                  <p>Puma’s corporate vision is “to be the most desirable and sustainable Sportlifestyle company in the world.” This vision statement aligns with “PUMAVision,” which is the corporation’s main thrust for its sustainability efforts. The following are the components of Puma’s corporate vision statement.<br><br></p>
+              </div>
+
+              <div class="vission-col">
+              <h3>MISSION</h3>
+              <p>Puma’s corporate mission is “to be the Fastest Sports Brand in the world.” This mission statement is encapsulated in the company’s mantra, “Forever Faster,” which highlights the strategic aim of being ahead of the competition in the sporting goods, apparel, and accessories industry. In this regard, Puma’s corporate mission statement has the following main components.<br><br></p>
+              </div>
+          </div>
+      </section>
+
+      <section class="footer">
+        <h4>About Us</h4>
+        <p>HQ OFFICE (Jempol) <BR> NO 69 ,LOTUS MALL, 72100,BAHAU , NEGERI SEMBILAN <BR> EMAIL: PUMAHQ@gmail.com<br>
+           Telephone: +603 6969 853
+        <br>Business Hour: 1000 - 2000 (Everyday)</p>
+    
+        
+       
+
+    </section>
+      
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+    
+      <br>
+      
+      <br>
+    
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+    
+    
+        <script>
+          /* When the user clicks on the button, 
+          toggle between hiding and showing the dropdown content */
+          function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+          }
+          
+          // Close the dropdown if the user clicks outside of it
+          window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn')) {
+            var myDropdown = document.getElementById("myDropdown");
+              if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+              }
+            }
+          }
+          </script>
